@@ -1,0 +1,101 @@
+
+<!-- saved from url=(0131)https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/learn-the-css-box-model-by-building-a-rothko-painting/step-42 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="">--><base href=".">
+  <script>
+    window.__frameId = 'fcc-main-frame';
+    window.onerror = function(msg) {
+      const string = msg.toLowerCase();
+      if (string.includes('script error')) {
+        msg = 'Build error, open your browser console to learn more.';
+      }
+      console.log(msg);
+      return true;
+    };
+    document.addEventListener('click', function(e) {
+      let element = e.target;
+      while(element && element.nodeName !== 'A') {
+        element = element.parentElement;
+      }
+      if (element && element.nodeName === 'A' && new URL(element.href).hash === '') {
+        e.preventDefault();
+        window.parent.window.alert(
+          i18nContent.t('misc.iframe-alert', { externalLink: element.href })
+        )
+      }
+      if (element) {
+        const href = element.getAttribute('href');
+        if (!href || href[0] !== '#' && !href.match(/^https?:\/\//)) {
+          e.preventDefault();
+        }
+      }
+    }, false);
+    document.addEventListener('submit', function(e) {
+      const action = e.target.getAttribute('action');
+      e.preventDefault();
+      if (action || action.match(/https?:\/\//)) {
+        window.parent.window.alert(
+          i18nContent.t('misc.iframe-form-submit-alert', { externalLink: action  })
+        )
+      }
+    }, false);
+  </script>
+<title>Rothko Painting</title><link rel="stylesheet" data-href="styles.css"><style class="fcc-injected-styles">.canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+  overflow: hidden;
+  filter: blur(2px);
+}
+
+.frame {
+  border: 50px solid black;
+  width: 500px;
+  padding: 50px;
+  margin: 20px auto;
+}
+
+.one {
+  width: 425px;
+  height: 150px;
+  background-color: #efb762;
+  margin: 20px auto;
+  box-shadow: 0 0 3px 3px #efb762;
+  border-radius: 9px;
+}
+
+.two {
+  width: 475px;
+  height: 200px;
+  background-color: #8f0401;
+  margin: 0 auto 20px;
+  box-shadow: 0 0 3px 3px #8f0401;
+  border-radius: 8px 10px;
+}
+
+.one, .two {
+  filter: blur(1px);
+}
+
+.three {
+  width: 91%;
+  height: 28%;
+  background-color: #b20403;
+  margin: auto;
+  filter: blur(2px);
+  box-shadow: 0 0 5px 5px #b20403;
+border-
+}</style></head>
+    
+    
+    
+  
+  <body>
+    <div class="frame">
+      <div class="canvas">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+      </div>
+    </div>
+  
+</body></html>
