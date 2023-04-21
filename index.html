@@ -172,7 +172,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-5 text-center">
-          <p id="name">Mi nombre</p>
+          <p  class="text-color" id="name"><h3>Mi nombre</h3></p>
         </div>
       </div>
       <!-- Botones cambia el color -->
@@ -187,6 +187,23 @@
           <button onclick="changeColorToGreen()"
           type="button" class="btn btn-outline-success">Green</button>
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- Texto con colores y le ponemos una clase-->
+  <div class="container">
+    <div class="row">
+      <div class="col"><p 
+        class="text-color" onclick="changeColorParagraph('#ff8000', this)">Me cambiaré a naranja</p></div>
+      <div class="col"><p 
+        class="text-color" onclick="changeColorParagraph('#00FFFF',this)">Me cambiaré a cian</p></div>
+      <div class="col"><p 
+        class="text-color" onclick="changeColorParagraph('#FF00FF',this)">Me cambiaré a magenta</p></div>
+    </div>
+    <div class="row">
+      <div class="col-5">
+        <button type="button" onclick="resetColors()" class="btn btn-dark">Reset
+
       </div>
     </div>
   </div>
