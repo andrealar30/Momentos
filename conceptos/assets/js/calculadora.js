@@ -1,21 +1,18 @@
-console.log("Sesion web1");
+class Calculator{
+    basic_operar(num1, num2, operador){
+        this.solucion = (num1+operador+num2);
+        this.numPantalla = eval(this.solucion);
+        return this.numPantalla;
+    }
+    advanced_operar(num1, num2, operador){
+        this.num1 = parseFloat(num1);
+        this.num2 = parseFloat(num2);
 
-function changeGretting(){
-    // obtener nombre cliente
-    const clientName = getNameOfClient();
-
-    // obteneer referencia de label h1
-    const grettingReference = getReferenceOfIdGretting();
-
-    // cambiar el saludo
-    grettingReference.innerHTML = "Hola " + clientName;        
-}
-
-function getNameOfClient(){
-    const clientName = prompt("Escribe tu nombre");
-    return clientName;
-}
-
-function getReferenceOfIdGretting(){
-    return document.getElementById("gretting");
+        switch (operador){
+            case 'raiz':
+                this.numPantalla = Math.pow(this.num2, 1/this.num1);
+                return this.numPantalla;
+                break;
+        }
+    }
 }
