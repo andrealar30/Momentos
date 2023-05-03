@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <!-- Adivina mi número -->
+    <div class="col-lg-12 ">
+        <div
+          class="card mt-5 text-center text-bg-dark "
+          style="max-width: 38rem"
+        >
+          <h1 class="card-header bg-info">Piensa en un número, intentaré adivinarlo.</h1>
+          <div class="card-body">
+            <h5 class="card-title">
+              Elige un número entre el 1 y el 100.
+            </h5>
+            <p class="card-text" id="mitad">¿Tu número es el 50?</p>
+            <div class="number-custom">
+              <button class="btn btn-outline-info" id="mayor">
+                Es mayor
+              </button>
+              <button class="btn btn-outline-info" id="menor">
+                Es menor
+              </button>
+              <button class="btn btn-outline-info" id="correcto">
+                ¡Adivinaste!
+              </button>
+              <button class="btn btn-outline-info" id="reset">
+                Juguemos de nuevo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    <script src="./js/adiv2"></script>
+  </body>
+</html>
